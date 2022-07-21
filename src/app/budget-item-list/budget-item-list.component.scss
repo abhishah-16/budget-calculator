@@ -1,0 +1,51 @@
+@import '../../main-style.scss';
+
+.budget-items {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+
+    .budget-items-container {
+        display: flex;
+        max-width: 750px;
+        width: 100%;
+        height: 100%;
+
+        .income-column,
+        .expences-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0;
+            flex-grow: 1;
+
+            h1 {
+                font-family: 'Lato';
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            .budget-item{
+                display:flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+        }
+
+        .income-column {
+            margin-right: 35px;
+
+            h1 {
+                color: $green
+            }
+        }
+
+        .expences-column {
+            h1 {
+                color: $red
+            }
+        }
+    }
+}

@@ -7,19 +7,19 @@ import { BudgetItem } from 'src/shared/model/budget-item.model';
   styleUrls: ['./budget-item-card.component.scss']
 })
 export class BudgetItemCardComponent implements OnInit {
-  @Input() item:BudgetItem
+  @Input() item: BudgetItem
   // isIncome: boolean = false;
-    
-  @Output() xbuttonclick:EventEmitter<any> = new EventEmitter<any>()
-  @Output() cardclick:EventEmitter<any> = new EventEmitter<any>()
+
+  @Output() xbuttonclick: EventEmitter<any> = new EventEmitter<any>()
+  @Output() cardclick: EventEmitter<any> = new EventEmitter<any>()
   constructor() { }
 
   ngOnInit(): void {
   }
-  onDelete(){
+  onDelete() {
     this.xbuttonclick.emit()
   }
-  onCardclick(){
+  onCardclick() {
     this.cardclick.emit()
   }
 }

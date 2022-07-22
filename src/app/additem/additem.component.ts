@@ -8,13 +8,13 @@ import { BudgetItem } from 'src/shared/model/budget-item.model';
   styleUrls: ['./additem.component.scss']
 })
 export class AdditemComponent implements OnInit {
-  @Input() item:BudgetItem = new BudgetItem(null,'')
-  @Output() formsubmit:EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>()
+  @Input() item: BudgetItem = new BudgetItem(null, '')
+  @Output() formsubmit: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>()
   constructor() { }
 
   ngOnInit(): void {
   }
-  onSubmit(form: NgForm){
+  onSubmit(form: NgForm) {
     // console.log(form.value)
     this.formsubmit.emit(form.value)
     form.reset()

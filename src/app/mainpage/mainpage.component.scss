@@ -30,12 +30,13 @@
         font-weight: 300;
         font-size: 50px;
         color: white;
+
         &.green {
-            color: lighten($green,15%);
+            color: lighten($green, 15%);
         }
 
         &.red {
-            color: lighten($red,15%);
+            color: lighten($red, 15%);
         }
     }
 }
@@ -45,7 +46,7 @@
     justify-content: center;
     align-items: center;
 
-    .add-item-container{
-        width:750px;
+    .add-item-container {
+        width: 750px;
     }
 }

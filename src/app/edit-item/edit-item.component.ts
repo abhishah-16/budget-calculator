@@ -11,13 +11,13 @@ import { BudgetItem } from 'src/shared/model/budget-item.model';
 export class EditItemComponent implements OnInit {
   // @Input() item:dialogref
   constructor(
-    public dialogref:MatDialogRef<EditItemComponent>,
-    @Inject(MAT_DIALOG_DATA) public item:BudgetItem
+    public dialogref: MatDialogRef<EditItemComponent>,
+    @Inject(MAT_DIALOG_DATA) public item: BudgetItem
   ) { }
 
   ngOnInit(): void {
   }
-  onSubmitted(updateitem:BudgetItem){
+  onSubmitted(updateitem: BudgetItem) {
     this.dialogref.close(updateitem)
   }
 }
